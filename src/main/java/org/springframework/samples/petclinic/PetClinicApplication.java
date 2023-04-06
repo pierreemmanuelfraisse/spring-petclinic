@@ -35,7 +35,9 @@ public class PetClinicApplication {
 	public static void main(String[] args) {
 		try {
 			SecureRandom sr = new SecureRandom();
-			sr.setSeed(123456L); 
+			sr.setSeed(123456L);
+			int v = sr.nextInt();
+			
 			SpringApplication.run(PetClinicApplication.class, args);
 		} catch(Exception e) {
 			e.printStackTrace();
