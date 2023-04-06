@@ -35,6 +35,7 @@ public class PetClinicApplication {
 	public static void main(String[] args) {
 		try {
 			Cipher c1 = Cipher.getInstance("DES");
+			
 			SpringApplication.run(PetClinicApplication.class, args);
 		} catch(Exception e) {
 			e.printStackTrace();
