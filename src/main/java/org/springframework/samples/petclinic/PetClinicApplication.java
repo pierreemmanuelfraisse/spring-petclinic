@@ -20,7 +20,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportRuntimeHints;
 
-import java.security;
+import javax.crypto.Cipher;
 
 /**
  * PetClinic Spring Boot Application.
@@ -34,9 +34,7 @@ public class PetClinicApplication {
 
 	public static void main(String[] args) {
 		try {
-			SecureRandom sr = new SecureRandom();
-			sr.setSeed(123456L);
-			int v = sr.nextInt();
+			Cipher c1 = Cipher.getInstance("DES");
 			
 			SpringApplication.run(PetClinicApplication.class, args);
 		} catch(Exception e) {
