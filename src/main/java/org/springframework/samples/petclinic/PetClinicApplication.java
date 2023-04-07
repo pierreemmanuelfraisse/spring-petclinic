@@ -33,17 +33,18 @@ import javax.crypto.Cipher;
 public class PetClinicApplication {
 
 	public static void main(String[] args) {
-		// try {
+		try {
 
-		Cipher c1 = Cipher.getInstance("DES");
+			Cipher c1 = Cipher.getInstance("DES");
 
-		int i = 0;
-		i++;
+			int i = 0;
+			i++;
 
-		SpringApplication.run(PetClinicApplication.class, args);
-		// } catch(Exception e) {
-		// e.printStackTrace();
-		// }
+			SpringApplication.run(PetClinicApplication.class, args);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
