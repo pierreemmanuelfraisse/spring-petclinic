@@ -117,6 +117,12 @@
       <artifactId>jakarta.xml.bind-api</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>net.mingsoft</groupId>
+      <artifactId>ms-mcms</artifactId>
+      <version>5.2.11</version>
+    </dependency>
+    
   </dependencies>
 
   <build>
